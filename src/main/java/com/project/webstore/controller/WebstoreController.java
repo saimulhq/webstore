@@ -122,9 +122,9 @@ public class WebstoreController {
 			messages.add(message);
 
 			Map<String, Object> body = errorResponseBodyGenerator.generateErrorResponseBody(Instant.now(),
-					"" + HttpStatus.OK, messages);
+					"" + HttpStatus.NOT_FOUND, messages);
 
-			return ResponseEntity.status(HttpStatus.OK).body(body);
+			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(body);
 		}
 	}
 
@@ -228,9 +228,9 @@ public class WebstoreController {
 			messages.add(message);
 
 			Map<String, Object> body = errorResponseBodyGenerator.generateErrorResponseBody(Instant.now(),
-					"" + HttpStatus.OK, messages);
+					"" + HttpStatus.NOT_FOUND, messages);
 
-			return ResponseEntity.status(HttpStatus.OK).body(body);
+			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(body);
 		}
 	}
 }
