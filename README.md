@@ -29,7 +29,7 @@
 
 5.  In order to run the project, run the following command:
 
-        java -jar target\webstore-0.0.1-SNAPSHOT.jar
+        java -jar target/webstore-0.0.1-SNAPSHOT.jar
 
 6.  After running the project, you can access the following endpoints using Postman/Curl:
 
